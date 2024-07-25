@@ -1,0 +1,93 @@
+.header {
+    background-color: rgba(130, 150, 146, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    position: relative;
+    height: 80px;
+    padding: 0 20px; /* Adiciona espaçamento nas laterais */
+    box-sizing: border-box;
+}
+
+.header img {
+    height: 50px;
+    margin-left: 20px; /* Ajustado para um espaço mais equilibrado */
+}
+
+.header ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header li {
+    position: relative;
+    margin: 0 20px; /* Aumenta o espaçamento entre os itens do menu */
+}
+
+.header li a {
+    color: #353A40;
+    padding: 12px 20px; /* Ajusta o padding para um espaçamento mais confortável */
+    display: block;
+    text-decoration: none; /* Remove o sublinhado dos links */
+    border-radius: 8px; /* Aumenta o arredondamento dos cantos */
+    transition: background 0.3s ease, transform 0.3s ease; /* Efeito de transição mais suave */
+}
+
+.header li a:hover {
+    background-color: rgba(55, 67, 61, 0.7);
+    transform: scale(1.05); /* Adiciona um leve aumento no hover */
+}
+
+.header li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(130, 150, 146, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px 0; /* Adiciona um pouco de padding interno */
+    margin: 0;
+    border-radius: 8px; /* Adiciona arredondamento ao submenu */
+}
+
+.header li:hover > ul {
+    display: block;
+}
+
+.header li.user {
+    margin-left: auto;
+    margin-right: 30px; /* Ajusta o espaçamento para alinhamento mais suave */
+}
+
+.icon-seta, .icon-user {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.icon-seta {
+    width: 12px; /* Aumenta o tamanho do ícone seta */
+    height: 12px;
+    margin-right: 6px; /* Ajusta o espaçamento entre ícones e texto */
+}
+
+.icon-user {
+    width: 20px; /* Aumenta o tamanho do ícone de usuário */
+    height: 20px;
+    margin-right: 8px; /* Ajusta o espaçamento entre ícones e texto */
+}
+.header li ul ul {
+    top: 0;
+    left: 100%;
+    margin-left: 1px; /* Ajusta a distância do submenu */
+}
+.header li ul ul li {
+    width: 180px; /* Largura reduzida para submenus */
+}
+/*
+cinza
+829692 claro
+37433D escuro
+353A40 fonte
+*/
